@@ -4,11 +4,13 @@
 // loops 10 times from 0 - 1000 in increments of 100
 
 
-function printNumbers() {
-	for (var i = 0; i < 1000; i += 100) {
-  		waitFor(i, function then() {
+var i = 0
+  	
+  	waitFor(i, function then() {
+  		for (; i <= 1000; i += 100) {
     		console.log(i)
     	}
+    	})
 
   	
 	
@@ -19,4 +21,4 @@ function waitFor(milliseconds, callback) {
   setTimeout(callback, milliseconds)
 }
 
-printNumbers();
+
