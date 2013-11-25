@@ -3,7 +3,7 @@
 // fix it to log out 12!
 
 function square(num) {
-  result = num * num
+  var result = num * num
   return result
 }
 
